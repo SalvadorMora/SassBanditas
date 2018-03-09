@@ -1,0 +1,34 @@
+body{
+  background: white;
+}
+
+
+@mixin negro($color) {
+    background-color: $color;
+}
+
+.box-negro { @include negro(black); }
+
+
+%boton-padre{
+    height: 100px;
+    width: 200px;
+}
+
+.boton-rojo-hijo{
+  background-color: red;
+  @extend %boton-padre;
+  border-radius: 10px;
+}
+
+.boton-blue-hijo{
+  background-color: blue;
+  @extend %boton-padre;
+  border-radius: 10px;
+}
+
+.boton-green-hijo{
+  background-color: green;
+  @extend %boton-padre;
+  border-radius: 10px;
+}

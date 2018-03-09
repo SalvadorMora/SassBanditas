@@ -1,0 +1,68 @@
+body {
+  background: white; }
+
+.box-negro {
+  background-color: black; }
+
+.boton-rojo-hijo, .boton-blue-hijo, .boton-green-hijo {
+  height: 100px;
+  width: 200px; }
+
+.boton-rojo-hijo {
+  background-color: red;
+  border-radius: 10px; }
+
+.boton-blue-hijo {
+  background-color: blue;
+  border-radius: 10px; }
+
+.boton-green-hijo {
+  background-color: green;
+  border-radius: 10px; }
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+
+nav {
+  background-color: #303F9F;
+  color: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center; }
+  nav a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none; }
+
+.portada-smiths {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://www.rockandpop.cl/wp-content/uploads/2018/02/sip-the-smiths-01.jpg");
+  height: 60vh;
+  background-position-y: calc(18%);
+  background-position-x: calc(44%); }
+  .portada-smiths h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 1px 2px 6px #000; }
+
+img {
+  height: 200px;
+  width: 200px; }
+
+.band-box {
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+  margin-top: 100px; }
+
+.box-circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
+
+/*# sourceMappingURL=main.css.map */

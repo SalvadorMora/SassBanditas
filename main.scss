@@ -1,0 +1,70 @@
+@import "style02";
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #303F9F;
+$primary-color-text: #fff;
+$zero: 0;
+$sm: 10px;
+
+
+
+body {
+    margin: $zero;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+nav {
+  background-color: $primary-color;
+  color: $primary-color-text;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  a{
+    color: $primary-color-text;
+    margin-left: $sm;
+    text-decoration: none;
+  }
+
+}
+
+
+.portada-smiths{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://www.rockandpop.cl/wp-content/uploads/2018/02/sip-the-smiths-01.jpg");
+  height: 60vh;
+  background-position-y: calc(18%);
+  background-position-x: calc(44%);
+  h1{
+    margin: $zero;
+    color:$primary-color-text;
+    font-size: 3rem;
+    text-shadow: 1px 2px 6px #000;
+  }
+
+}
+
+img{
+  height:200px;
+  width: 200px;
+}
+
+.band-box{
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+  margin-top: 100px;
+
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box-circle { @include border-radius(50%); }
